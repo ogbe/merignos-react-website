@@ -1,0 +1,64 @@
+section.testimonials {
+  padding: 10px 30px;
+}
+
+.testimonials aside {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.testimonials h1 {
+  font-weight: 600;
+}
+
+.testimonials > p,
+.testimonials > aside > p {
+  font-size: 16px;
+}
+
+.carousel-container > img {
+  display: none;
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-gap: 10px;
+}
+
+.companies img {
+  width: 70%;
+}
+
+span {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 540px) {
+  section.testimonials {
+    padding: 30px 75px;
+  }
+
+  .carousel-container > img {
+    display: block;
+    position: relative;
+    left: -25px;
+    margin-bottom: -40px;
+  }
+
+  .companies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.testimonials > div { 
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr;
+    grid-gap: 0 100px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,61 @@
+div.contactinfo {
+  text-align: left;
+  margin-left: 30px
+}
+
+div.contactinfo div {
+  margin: 20px 0;
+}
+
+div.contactinfo h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+div.contactinfo span {
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+div.contactinfo img {
+  height: 30px;
+}
+
+div.contactinfo h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+div.contactinfo p {
+  margin-top: 40px;
+  text-transform: capitalize;
+  margin-left: 55px;
+  font-size: 16px;
+}
+
+div.contactinfo a {
+  color: #000000;
+  margin-left: 30px;
+}
+
+div.contactinfo a:hover {
+  color: var(--primary-color);
+}
+
+div.contactinfo a.maplink {
+  color: var(--primary-color);
+  margin-left: 55px;
+}
+
+@media screen and (min-width: 300px) {
+  div.contactinfo h4, div.contactinfo a {
+    margin-left: 30px;
+  }
+
+  div.contactinfo p, div.contactinfo a.maplink {
+    margin-left: 65px;
+  }
+}

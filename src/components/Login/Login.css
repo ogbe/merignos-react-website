@@ -1,0 +1,158 @@
+section.login {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+
+aside.loginimg {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 5px 5px 0px;
+  background: var(--primary-color);
+  padding: 100px 30px 100px;
+  height: 100%;
+}
+
+aside.loginimg img {
+  width: 100%;
+}
+
+aside.loginimg img[alt="white logo"] {
+  width: 127px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+aside.logintext {
+  margin: 0 30px;
+  text-align: left;
+}
+
+aside.logintext h1 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+aside.logintext p {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+aside.logintext form {
+  margin: 30px 0;
+  display: grid;
+  grid-template-rows: repeat(5, 0.5fr);
+  row-gap: 20px;
+}
+
+aside.logintext form input {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  width: 100%;
+}
+
+aside.logintext form input::placeholder {
+  text-transform: capitalize;
+  color: #000000;
+}
+
+aside.logintext form img {
+  position: relative;
+  top: -57px;
+  left: 85%;
+  width: 25px;
+}
+
+aside.logintext form div span {
+  display: grid;
+  grid-template-columns: 20px auto;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  align-items: center;
+}
+
+aside.logintext a {
+  color: var(--primary-color);
+}
+
+aside.logintext div.loginform {
+  margin: 26px 0 140px;
+}
+
+aside.logintext form div a {
+  margin-top: 20px;
+}
+
+aside.logintext form input[type="checkbox"] {
+  width: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  section.login {
+    grid-template-columns: 47% auto;
+    grid-template-rows: 0fr;
+    grid-gap: 10px;
+    align-items: center;
+  }
+
+  aside.loginimg {
+    padding: 100px 70px 100px;
+  }
+
+  aside.loginimg img[alt="white logo"] {
+    left: 70px;
+  }
+
+  aside.logintext {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    height: calc(80vh - 70px);
+  }
+
+  aside.logintext h1 {
+    margin: 0;
+  }
+
+  aside.logintext form {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-row-gap: 0;
+  }
+
+  aside.logintext form input[type="text"],
+  aside.logintext form input[type="password"] {
+    margin-top: 20px;
+  }
+
+  aside.logintext form img {
+    top: -33px;
+    left: -5%;
+  }
+
+  aside.logintext form div {
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 10px;
+    width: 100%;
+  }
+
+  aside.logintext form div span,
+  aside.logintext form div a {
+    margin: 0;
+  }
+
+  aside.logintext form button {
+    padding: 10px 60px;
+    margin-top: 20px;
+  }
+}

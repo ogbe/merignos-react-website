@@ -1,0 +1,22 @@
+section.contacthero {
+  margin: 70px 30px;
+}
+
+section.contacthero > h1 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+section.contacthero > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 33px;
+}
+
+@media screen and (min-width: 920px) {
+  section.contacthero > p {
+    width: 48%;
+    margin: auto;
+  }
+}

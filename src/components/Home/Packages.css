@@ -1,0 +1,65 @@
+section.packages {
+  background: #ffffff;
+  padding: 10px 10px 30px;
+  text-align: initial;
+}
+
+aside.package-vector {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+aside.package-vector img {
+  width: 90%;
+}
+
+section.packages aside {
+  padding: 10px;
+}
+
+section.packages h3 {
+  font-size: 18px;
+}
+
+section.packages p {
+  font-size: 16px;
+}
+
+section.packages > aside > div > div {
+  position: relative;
+  left: -13px;
+  top: 36px;
+}
+
+section.packages div > p,
+div > h3 {
+  padding: 10px 30px;
+}
+
+section.packages button {
+  margin-top: 20px;
+}
+
+section.packages aside div p {
+  border-left: 2px solid #dcdada;
+}
+
+@media screen and (min-width: 540px) {
+  section.packages {
+    padding: 10px 30px 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.packages {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    padding: 10px 70px;
+  }
+
+  section.packages aside:nth-child(2) {
+    padding: 150px 0;
+  }
+}

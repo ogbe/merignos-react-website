@@ -1,0 +1,39 @@
+form.contactform {
+  text-align: left;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px
+  margin: 10px
+}
+
+form.contactform div {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+form.contactform label {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+form.contactform input,
+textarea {
+  box-shadow: 1px 1px 4px #e5e5e5;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #000000;
+  outline: none;
+}
+
+form.contactform button {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  form.contactform {
+    padding: 40px;
+  }
+}

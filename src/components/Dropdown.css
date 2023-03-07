@@ -1,0 +1,21 @@
+.dropdown button {
+  color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: transparent;
+  border-bottom: 1px solid #f2f2f2;
+  border-radius: 0;
+  outline: none;
+}
+
+.dropdown .active-dropdown {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.dropdown .inactive {
+  display: none;
+}

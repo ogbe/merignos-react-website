@@ -1,0 +1,98 @@
+section.register {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+aside.registertext {
+  margin: 0 30px;
+  text-align: left;
+}
+
+aside.registertext h1 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 30px 0;
+  text-transform: none;
+}
+
+aside.registertext form {
+  margin: 30px 0;
+  display: grid;
+  grid-template-rows: repeat(5, 0.5fr);
+  gap: 20px;
+}
+
+aside.registertext form input {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  width: 100%;
+}
+
+aside.registertext form input:nth-child(1) {
+  background: #e5e5e5;
+  border: 1px solid #f7f7f7;
+  text-transform: capitalize;
+  color: #888888;
+}
+
+aside.registertext form input::placeholder {
+  text-transform: capitalize;
+  color: #000000;
+}
+
+aside.registertext form img {
+  position: relative;
+  top: -55px;
+  left: 85%;
+  width: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  section.register {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0fr;
+    grid-gap: 10px;
+    align-items: center;
+  }
+
+  aside.loginimg {
+    padding: 100px 70px 100px;
+  }
+
+  aside.loginimg img[alt="white logo"] {
+    left: 70px;
+  }
+
+  aside.registertext {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    height: calc(80vh - 70px);
+  }
+
+  aside.registertext div {
+    margin: 30px 0;
+  }
+
+  aside.registertext form {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 20px;
+  }
+
+  aside.registertext form img {
+    top: -56px;
+    left: -5%;
+  }
+
+  aside.registertext form button {
+    padding: 10px 60px;
+    margin-top: 20px;
+  }
+}

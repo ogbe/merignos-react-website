@@ -1,0 +1,56 @@
+aside.termsandconditionstext {
+  margin: 30px;
+  display: grid;
+  grid-template-rows: 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr;
+  row-gap: 30px;
+  text-align: left;
+}
+
+aside.termsandconditionstext h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+aside.termsandconditionstext p {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0
+}
+
+aside.termsandconditionstext form {
+  display: grid;
+  grid-template-rows: 50% auto;
+  row-gap: 20px;
+  align-items: center;
+}
+
+aside.termsandconditionstext form label {
+  display: grid;
+  grid-template-columns: 20px auto;
+  column-gap: 20px;
+  align-items: center;
+}
+
+aside.termsandconditionstext form input {
+  height: 50px;
+}
+
+aside.termsandconditionstext a {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  section.termsandconditions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: calc(100vh - 70px);
+  }
+
+  aside.termsandconditionstext {
+    margin: 70px;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    row-gap: 20px;
+    text-align: left;
+  }
+}

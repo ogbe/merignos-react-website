@@ -1,0 +1,26 @@
+section.registercomponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 10px;
+  margin: 10px auto 50px;
+  width: 260px;
+}
+
+section.registercomponent p {
+  font-size: 16px;
+  margin: 0;
+}
+
+section.registercomponent a {
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  section.registercomponent {
+    position: absolute;
+    top: 100px;
+    right: 70px;
+  }
+}

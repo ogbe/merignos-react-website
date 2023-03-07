@@ -1,0 +1,46 @@
+section.vision {
+  margin: 70px 20px;
+}
+
+section.vision img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+section.vision > aside.text {
+  margin-top: 50px;
+}
+
+section.vision aside.text h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section.vision aside.text p {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 540px) {
+  section.story div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 250px 70px 50px;
+    align-items: center;
+    line-height: 30px;
+  }
+
+  section.vision aside.text {
+    margin: 20px 0;
+  }
+
+  section.vision aside.text h1 {
+    margin: 20px 0;
+  }
+}

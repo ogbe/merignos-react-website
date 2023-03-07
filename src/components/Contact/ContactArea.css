@@ -1,0 +1,19 @@
+section.contactarea {
+  padding: 30px;
+  background: rgba(189, 83, 76, 0.04);
+  box-shadow: 1px 1px 4px #e5e5e5;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  grid-row-gap: 100px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  section.contactarea {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0fr;
+    grid-column-gap: 30px;
+    padding: 50px 70px;
+    align-items: center;
+  }
+}

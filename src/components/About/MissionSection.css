@@ -1,0 +1,46 @@
+section.mission {
+  margin: 70px 20px;
+}
+
+section.mission img {
+  width: 100%;
+  border-radius: 5px 5px 5px 30px;
+}
+
+section.mission > aside.text {
+  margin-top: 50px;
+}
+
+section.mission aside.text h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section.mission aside.text p {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 540px) {
+  section.mission div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.mission {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 70px;
+    grid-gap: 50px;
+    align-items: center;
+  }
+
+  section.mission > aside.text {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  section.mission > aside.missionimg {
+    grid-column-start: 2;
+  }
+}

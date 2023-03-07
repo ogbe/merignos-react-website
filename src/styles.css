@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+p:first-letter {
+  text-transform: capitalize;
+}
+
+.logo img,
+.menu-icon,
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+}
+
+:root {
+  --primary-color: #ed7971;
+  --secondary-color: #bd534c;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #333333;
+}
+
+button {
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+button.outline {
+  background-color: white;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+button.disabled {
+  background: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  color: #888888;
+}
+
+button.disabled:hover {
+  cursor: not-allowed;
+}
+
+a.email {
+  text-transform: lowercase;
+}
